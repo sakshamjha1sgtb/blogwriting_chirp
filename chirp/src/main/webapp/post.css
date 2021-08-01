@@ -1,0 +1,272 @@
+@charset "ISO-8859-1";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Montserrat';
+  background: #242C39;
+  color: #fff;
+}
+#loading{
+	position:fixed;
+	height:100vh;
+	width:100%;
+	top:0;
+	background:#fff url("https://hackernoon.com/images/0*4Gzjgh9Y7Gu8KEtZ.gif") no-repeat center;
+	z-index:99999;
+	}
+
+.nav {
+  background: #242C39;
+  height:70%;
+  width: 15%;
+  padding-top:10px;
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items:center;
+  position: fixed;
+  bottom: 0;
+  box-shadow: 0 -4px 25px 0 rgba(0, 0, 0, .12);
+}
+
+.nav .icon {
+  flex: 1;
+  text-align: center;
+  color: #8E919A;
+}
+
+.nav .icon i {
+  padding-bottom: 10px;
+  font-size: 20px;
+}
+.nav :hover{
+	color:white;
+}
+
+.nav .icon p {
+  font-size: 12px;
+  text-align:center;
+}
+.nav .icon a{
+	text-decoration:none;
+	color:#8E919A;
+}
+#active a{
+	color:#FFDF3B !important;
+}
+.active  {
+  color: #FFDF3B !important;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.space {
+  height: 200px;
+}
+.nava {
+  background: #242C39;
+  height:75%;
+  width: 15%;
+  right:10px;
+  padding-top:10px;
+  margin-right: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items:center;
+  position: fixed;
+  bottom: 0;
+  box-shadow: 0 -4px 25px 0 rgba(0, 0, 0, .12);
+}
+
+.nava .icon {
+  flex: 1;
+  text-align: center;
+  color: #8E919A;
+}
+
+.nava .icon i {
+  padding-bottom: 10px;
+  font-size: 20px;
+}
+.nava :hover{
+	color:white;
+}
+
+.nava .icon p {
+  font-size: 12px;
+  text-align:center;
+}
+.nava .icon a{
+	text-decoration:none;
+	color:#8E919A;
+}
+
+.livea{
+	height:100px;
+	width:100px;
+	right:4%;
+	top:2%;
+	position:fixed;
+}
+
+.livea img{
+	height:100%;
+	width:100%;
+	border-radius:20%;
+	justify-content: space-around;
+	border:1px solid white;
+}
+.live{
+	height:100px;
+	width:100px;
+	left:4%;
+	top:2%;
+	position:fixed;
+}
+.live p{
+	color:white;
+	margin-top:0;
+	margin-left:15px;
+	font-weight:999;
+}
+.live img{
+	height:100%;
+	width:100%;
+	border-radius:50%;
+	justify-content: space-around;
+	border:1px solid white;
+}
+
+
+.newsfeed {
+  padding: 0 20px;
+}
+
+.card {
+  width: 55%;
+  height: 100%;
+  background: #242C39;
+  box-shadow: 0 0 12px 2px rgba(0, 0, 0, .5);
+  margin-top: 20px;
+  margin-left: 20%;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  text-align:center;
+  font-size: 17px;
+}
+
+.card .picture {
+  background-position: 50%;
+  background-size: cover;
+  height: 300px;
+  width: 50%;
+  margin-left:25%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.card .picture img{
+	position:relative;
+	height:100%;
+	width:100%;
+}
+.card .content {
+  display: flex;
+  flex-direction: column;
+  padding: 15px 10px;
+}
+
+.card .header {
+  display: flex;
+  align-items: center;
+}
+
+
+.card .detail {
+  margin-left: 10px;
+   position:relative;
+}
+
+.wrapper form{
+  padding: 10px 30px 50px 30px;
+}
+.wrapper form .field{
+  height: 50px;
+  width: 100%;
+  margin-top: 20px;
+  position: relative;
+}
+.wrapper form .field input{
+  height: 100%;
+  width: 100%;
+  background:#fff;
+  margin-bottom:10px;
+  outline: none;
+  font-size: 17px;
+  padding-left: 20px;
+  border: 1px solid lightgrey;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+}
+.wrapper form .field input:focus,
+form .field input:valid{
+  border-color:#4158d0;
+}
+.wrapper form .field input:hover{
+	border:2px solid  white;
+}
+
+
+form .content{
+  display: flex;
+  width: 100%;
+  height: 50px;
+  font-size: 16px;
+  align-items: center;
+  justify-content: space-around;
+}
+form .content .checkbox{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+form .content input{
+  width: 15px;
+  height: 15px;
+  background: red;
+}
+
+form .content .pass-link{
+  color: "";
+}
+form .field input[type="submit"]{
+  color: #fff;
+  border: none;
+  padding-left: 0;
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  background: linear-gradient(-135deg, #c850c0, #4158d0);
+  transition: all 0.1s ease;
+}
+form .field input[type="submit"]:hover{
+  transform: scale(0.95);
+}
+.wrapper form .field label{
+  margin-top:50px;
+  padding:30px;
+  font-weight: 400;
+  font-size: 17px;
+  pointer-events: none;
+}
+form .field input[type="file"]{
+	padding-left:240px;
+	padding-top:7px;
+}
